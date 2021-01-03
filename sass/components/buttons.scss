@@ -1,0 +1,28 @@
+.buttons{
+    color: white;
+    border-radius: 24px;
+    border: 2px solid white;
+    background: transparent;
+
+    padding: 9px 33px 11px;
+
+    font-size: 18px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    &:hover{
+        background-color: white;
+        color: #002529;
+    }
+
+    &--dark{
+        border-color: #012F34;
+        color: #012F34;
+
+        &:hover{
+            background-color: #012F34;
+            color: white;
+        }
+    }
+}

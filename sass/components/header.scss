@@ -1,0 +1,53 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 129px;
+
+    @media screen and (max-width: 604px) {
+        margin-bottom: 80px;
+    }
+
+    &__logo{
+        margin-right: 80px;
+
+        @media screen and (max-width:604px){
+            width: 128px;
+        }
+    }
+
+    &__nav{
+        display: flex;
+        align-items: center;
+    }
+
+    &__navBar{
+        display: flex;
+
+        @media screen and (max-width: 604px) {
+            display: none;
+        }
+    }
+
+    &__button{
+        @media screen and (max-width: 604px) {
+            display: none;
+        }
+    }
+
+    &__link{
+        color: white;
+        margin-right: 40px;
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    &__toggle{
+        display: none;
+
+        @media screen and (max-width: 604px) {
+            display: block;
+        }
+    }
+}

@@ -1,0 +1,20 @@
+.l-container{
+    max-width: 1180px;
+    padding: 0 40px;
+    margin: 0 auto;
+
+    @media screen and (max-width: 375px) {
+        padding: 0 24px;
+    }
+
+    &--padding{
+        @media screen and (max-width: 768px) {
+            padding: 0 98px;
+        }
+
+        @media screen and (max-width: 692px) {
+            padding:0 24px;
+        }
+        
+    }
+}
