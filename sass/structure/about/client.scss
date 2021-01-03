@@ -1,0 +1,46 @@
+.client{
+    width: 100%;
+    height: 437px;
+
+    padding-top: 140px;
+
+    background-color: #012F34;
+
+    &__title{
+        text-align: center;
+
+        font-size: 48px;
+        line-height: 48px;
+
+        color: white;
+
+        margin-bottom: 64px;
+    }
+
+    &__logos{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap:7%;
+    }
+
+    &__logo{
+        max-width: 175px;
+        height: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img{
+            width: 100%;
+        }
+
+        &--mini{
+            height: 45px;
+
+            img{
+                width: unset;
+                height: 100%;
+            }
+        }
+    }
+}
