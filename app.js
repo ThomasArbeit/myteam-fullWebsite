@@ -10,13 +10,11 @@ toggles.forEach(function(toggle){
         if (carousel.classList == "team__carousel"){
             carousel.classList = "team__carousel--clicked";
 
-            toggle.style.transform = "rotate(135deg)";
-            toggle.style.backgroundColor = "#79C8C7";
+            toggle.classList = "team__toggle team__toggle--clicked"
         } else {
             carousel.classList = "team__carousel";
 
-            toggle.style.transform = "rotate(0deg)";
-            toggle.style.backgroundColor = "#F67E7E";
+            toggle.classList = "team__toggle"
         }
     })
 })

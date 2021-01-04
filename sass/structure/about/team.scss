@@ -145,6 +145,17 @@
         &:hover{
             background-color: #79C8C7;
         }
+
+        &--clicked{
+            background-color: #79C8C7;
+            transform: rotate(135deg);
+
+            &:hover{
+                background-color: #F67E7E;
+            }
+        }
+
+        
     }
 
     &__watermark{

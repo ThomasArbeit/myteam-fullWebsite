@@ -817,6 +817,13 @@ li {
 .team__toggle:hover {
   background-color: #79C8C7;
 }
+.team__toggle--clicked {
+  background-color: #79C8C7;
+  transform: rotate(135deg);
+}
+.team__toggle--clicked:hover {
+  background-color: #F67E7E;
+}
 .team__watermark {
   position: absolute;
 }
