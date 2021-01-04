@@ -1,10 +1,22 @@
 .client{
+    position: relative;
+    overflow: hidden;
+
     width: 100%;
     height: 437px;
 
     padding-top: 140px;
 
     background-color: #012F34;
+
+    @media screen and (max-width:1261px){
+        height: 308px;
+        padding-top: 100px;
+    }
+
+    @media screen and (max-width:604px){
+        height: 632px;
+    }
 
     &__title{
         text-align: center;
@@ -15,12 +27,27 @@
         color: white;
 
         margin-bottom: 64px;
+
+        @media screen and (max-width:768px){
+            font-size: 32px;
+            margin-bottom: 48px;
+        }
+
+        @media screen and (max-width:604px){
+            margin-bottom: 64px;
+        }
     }
 
     &__logos{
         display: grid;
         grid-template-columns: repeat(5, 1fr);
         grid-gap:7%;
+
+        @media screen and (max-width:604px){
+            grid-template-columns: repeat(1, 1fr);
+            place-content: center;
+            row-gap: 42px;
+        }
     }
 
     &__logo{
@@ -30,9 +57,14 @@
         justify-content: center;
         align-items: center;
 
+        @media screen and (max-width:604px){
+            margin: auto;
+        }
+
         img{
             width: 100%;
             object-fit: contain;
+            object-position: center center;
         }
 
         &--mini{
@@ -41,6 +73,20 @@
                 width: 60%;
                 object-position: right center;
             }
+        }
+    }
+
+    &__watermark{
+        position: absolute;
+        top:0;
+        left:0;
+
+        @media screen and (max-width:875px){
+            top:-100px;
+        }
+
+        @media screen and (max-width:604px){
+            left: -100px;
         }
     }
 }
