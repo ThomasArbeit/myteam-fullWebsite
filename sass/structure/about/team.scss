@@ -36,6 +36,20 @@
         height: 281px;
     }
 
+    &__inner{
+        height: 253px;
+        overflow: hidden;
+    }
+
+    &__carousel{
+        transition: transform 0.3s ease-in-out;
+
+        &--clicked{
+            transform: translateY(-50%);
+            transition: transform 0.3s ease-in-out;
+        }
+    }
+
     &__person{
         height: 253px;
         background-color: #012F34;
@@ -66,7 +80,23 @@
         font-weight: 600;
 
         margin-top: 8px;
+        margin-bottom: 24px;
         width: 80%;
+    }
+
+    &__links{
+        display: flex;
+        width: 60px;
+        justify-content: space-between;
+
+        li{
+            display: block;
+            margin-right: 1px;
+
+            &:hover .team__link{
+                fill: #F67E7E;
+            }
+        }
     }
 
     &__photo{
@@ -93,6 +123,9 @@
     }
 
     &__toggle{
+        
+        position: relative;
+        z-index: 3;
         width: 56px;
         height: 56px;
         background-color: #F67E7E;
@@ -104,6 +137,10 @@
         display: flex;
         justify-content: center;
         align-items: center;
+
+        cursor: pointer;
+
+        transition: transform 0.4s ease-in-out;
 
         &:hover{
             background-color: #79C8C7;

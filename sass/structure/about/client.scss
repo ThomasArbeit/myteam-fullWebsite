@@ -25,21 +25,21 @@
 
     &__logo{
         max-width: 175px;
-        height: 45px;
+        max-height: 45px;
         display: flex;
         justify-content: center;
         align-items: center;
 
         img{
             width: 100%;
+            object-fit: contain;
         }
 
         &--mini{
-            height: 45px;
-
             img{
-                width: unset;
-                height: 100%;
+                object-fit: unset;
+                width: 60%;
+                object-position: right center;
             }
         }
     }

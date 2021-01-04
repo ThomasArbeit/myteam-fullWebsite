@@ -734,6 +734,17 @@ li {
 .team__item {
   height: 281px;
 }
+.team__inner {
+  height: 253px;
+  overflow: hidden;
+}
+.team__carousel {
+  transition: transform 0.3s ease-in-out;
+}
+.team__carousel--clicked {
+  transform: translateY(-50%);
+  transition: transform 0.3s ease-in-out;
+}
 .team__person {
   height: 253px;
   background-color: #012F34;
@@ -757,7 +768,20 @@ li {
   line-height: 25px;
   font-weight: 600;
   margin-top: 8px;
+  margin-bottom: 24px;
   width: 80%;
+}
+.team__links {
+  display: flex;
+  width: 60px;
+  justify-content: space-between;
+}
+.team__links li {
+  display: block;
+  margin-right: 1px;
+}
+.team__links li:hover .team__link {
+  fill: #F67E7E;
 }
 .team__photo {
   width: 96px;
@@ -777,6 +801,8 @@ li {
   font-style: italic;
 }
 .team__toggle {
+  position: relative;
+  z-index: 3;
   width: 56px;
   height: 56px;
   background-color: #F67E7E;
@@ -785,6 +811,8 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
+  transition: transform 0.4s ease-in-out;
 }
 .team__toggle:hover {
   background-color: #79C8C7;
@@ -821,20 +849,19 @@ li {
 }
 .client__logo {
   max-width: 175px;
-  height: 45px;
+  max-height: 45px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .client__logo img {
   width: 100%;
-}
-.client__logo--mini {
-  height: 45px;
+  object-fit: contain;
 }
 .client__logo--mini img {
-  width: unset;
-  height: 100%;
+  object-fit: unset;
+  width: 60%;
+  object-position: right center;
 }
 
 /*# sourceMappingURL=style.css.map */
