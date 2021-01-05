@@ -7,6 +7,19 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+    <div class="mobileNav" id="mobileNav">
+        <div class="mobileNav__darkBg"></div>
+        <div class="mobileNav__menu" id="menu">
+            <div class="mobileNav__toggle" id="toggleOff"><img src="./img/icon-close.svg" alt=""></div>
+            <ul class="mobileNav__nav">
+                <li><a href="index.html">home</a></li>
+                <li><a href="about.html">about</a></li>
+            </ul>
+            <button class="mobileNav__button buttons">contact us</button>
+        </div>
+    </div>
+
     <!-- Hero Section -->
     <section class="hero">
         <div class="l-container ">
@@ -19,7 +32,7 @@
                     </ul>
                 </div>
                 <button class="header__button buttons">contact us</button>
-                <img src="./img/icon-hamburger.svg" alt="" class="header__toggle">
+                <img src="./img/icon-hamburger.svg" alt="" class="header__toggle" id="toggleOn">
             </header>
     
             <div class="hero__content">
@@ -152,5 +165,7 @@
             </div>
         </div>
     </section>
+
+    <script src="toggleMenu.js"></script>
 </body>
 </html>
