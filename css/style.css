@@ -237,17 +237,18 @@ li {
 
 .mobileNav {
   position: fixed;
-  width: 100%;
+  overflow: hidden;
+  width: 0%;
   height: 100vh;
   top: 0;
   bottom: 0;
-  left: 0;
   right: 0;
   z-index: 2;
-  display: none;
+  transition: 0.5s;
+  transform-origin: right;
 }
 .mobileNav--active {
-  display: unset;
+  width: 100%;
 }
 .mobileNav__darkBg {
   background: black;
@@ -265,6 +266,7 @@ li {
   padding-left: 48px;
   padding-top: 112px;
   background-color: #2C6269;
+  overflow-x: hidden;
 }
 .mobileNav__toggle {
   position: absolute;
@@ -287,6 +289,7 @@ li {
 }
 .mobileNav__button {
   margin-top: 12px;
+  min-width: 160px;
 }
 
 .l-container {
@@ -947,7 +950,7 @@ li {
 }
 .team__toggle {
   position: relative;
-  z-index: 3;
+  z-index: 1;
   width: 56px;
   height: 56px;
   background-color: #F67E7E;

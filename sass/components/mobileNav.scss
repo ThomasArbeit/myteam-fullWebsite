@@ -1,18 +1,19 @@
 .mobileNav{
     position: fixed;
-    width: 100%;
+    overflow: hidden;
+    width: 0%;
     height: 100vh;
     top: 0;
     bottom: 0;
-    left: 0;
     right: 0;
 
     z-index: 2;
 
-    display:none;
+    transition: 0.5s;
+    transform-origin: right;
 
     &--active{
-        display: unset;
+        width: 100%;
     }
 
     &__darkBg{
@@ -35,6 +36,8 @@
         padding-top: 112px;
 
         background-color: #2C6269;
+
+        overflow-x: hidden;
 
     }
 
@@ -66,5 +69,6 @@
 
     &__button{
         margin-top: 12px;
+        min-width: 160px;
     }
 }
