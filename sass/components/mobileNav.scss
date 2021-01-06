@@ -49,6 +49,8 @@
 
     &__nav{
 
+        margin-bottom: 34px;
+
         li{
             display: block;
             margin-bottom: 24px;
@@ -68,7 +70,9 @@
     }
 
     &__button{
-        margin-top: 12px;
+        display: inline-block;
         min-width: 160px;
+
+        white-space: nowrap;
     }
 }

@@ -25,4 +25,14 @@
             color: white;
         }
     }
+
+    &--secondary{
+        color: #002529;
+        background-color: white;
+        border: none;
+
+        &:hover{
+            background-color: #79C8C7;
+        }
+    }
 }
